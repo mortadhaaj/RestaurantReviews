@@ -1,5 +1,5 @@
 self.addEventListener('install', function(event) {
-  event.waintUntil(
+  event.waitUntil(
     caches.open('mycache').then(function(cache) {
       return cache.addAll([
         '/',
